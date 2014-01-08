@@ -1,12 +1,331 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <title>Tapestry Development</title>
-</head>
-<body>
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>Tapestry Development</title>
+    <meta name="description" content="">
+    <meta name="author" content="Traclab">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<h1>Tapestry Development</h1>
+    <!-- Loading main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+
+<body>
+	<!-- Begin trac_preload -->
+	<div id="trac_preload">
+		<div id="trac_textload"><p></p></div>
+	</div>
+	<!-- End trac_preload -->
+	
+	<section class="trac_header" id="head">
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<div class="trac_brand">
+						<a href=""><img src="img/logo.png" alt="logo"></a>
+					</div>
+					<div class="trac_welcome">
+						<div class="trac_trac_welcomeslide">
+							<ul class="texts">
+								<li>Tapestry <em>D</em>evelopment</li>
+								<li>Building great ideas</li>
+								<li>One thread at a time</li>
+							</ul>
+						</div>
+						
+						<div class="trac_counter">
+							<input class="knob days" data-id="days" data-readOnly="true" data-width="162" data-displayPrevious=true data-fgColor="#fff" data-skin="tron" data-thickness=".15" data-min="0" data-max="365" value="75"/>
+							<input class="knob hour" data-id="hours" data-readOnly="true" data-width="162" data-min="0" data-max="24" data-displayPrevious=true data-fgColor="#ffffff" data-skin="tron" data-thickness=".15" value="75" />
+							<input class="knob minute" data-id="minutes" data-readOnly="true" data-width="162" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#ffffff" data-skin="tron" data-thickness=".15" value="75" />
+							<input class="knob second" data-id="seconds" data-readOnly="true" data-width="162" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#ffffff" data-skin="tron" data-thickness=".15" value="75" />
+						</div>
+						
+						<div class="trac_subscribe">
+							<h3 class="trac_subscibetitle">Countdown to the next big thing!</h3>
+						</div>
+					</div>
+					<div class="link">
+						<a href="#trac_about" data-placement="top" data-toggle="tooltip" title="Have a look"><img src="img/arrow-down.png" alt=""></a>
+					</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="trac_menu" >
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <a href=""><img class="logo-center" alt="logo" src="img/logo_center.png"></a>
+                    <ul class="trac_mainmenu">
+                        <li><a href="#trac_about">About Us</a></li>
+                        <li><a href="#service">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="trac_mobilebutton"><i class="icon-align-justify"></i></div>
+                    <div class="clearfix"></div>
+                    <ul class="trac_mobtrac_menu">
+                        <li><a href="#trac_about">About Us</a></li>
+                        <li><a href="#service">Services</a></li>
+                        <li><a href="#contact" >Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="trac_about" class="trac_about trac_white">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <div class="title">
+                        <h1>We are Tapestry</h1>
+                        <div class="trac_subtitle">
+                          <p>Tapestry Development is a <span class="trac_highlight">San Diego, CA</span> software company.   We take interesting ideas and turn them into great software solutions.</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="trac_aboutus">
+                    <div class="span4">
+						  <div class="trac_abouttitle">
+							<h4>
+								<span>Our Vision</span>
+							</h4>
+							</div>
+							<p>Software should feel like magic. We are always looking for ways to take innovation to the next level so that the complexity of a solution can make ideas feel simple.
+.</p>
+							
+					</div>
+                    <div class="span4">
+						  <div class="trac_abouttitle">
+							<h4>
+								<span>Our Mission</span>
+							</h4>
+							</div>
+							<p>Tapestry is a place for creators. When diverse backgrounds and ideas collide, those moments provide the necessary fuel to innovate. Tapestry provides the setting for this to happen. </p>
+					</div>
+
+					<div class="span4">
+						  <div class="trac_abouttitle">
+							<h4>
+								<span>Why Choose Us</span>
+							</h4>
+                          </div>
+
+                          <ul class="trac_serviceicons">
+                            <li><i class="icon-ok"></i> Forward thinking technology</li>
+                            <li><i class="icon-ok"></i> Full stack development</li>
+                            <li><i class="icon-ok"></i> Modern Design</li>
+                            <li><i class="icon-ok"></i> Creative solutions</li>
+                        </ul>
+                      </div>
+                </div>
+			</div>
+		</div>
+    </section>
+
+    <section class="service" id="service">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <div class="title">
+                        <h1>Our Services</h1>
+                        <div class="trac_subtitle">
+                          <p>Tapestry is a full-stack development company. We <span class="trac_highlight">build software</span> with <span class="trac_highlight">forward thinking</span> technology and design.</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row trac_servicebox">
+				<!--Service blocks-->
+				<div class="trac_service span4">
+					<div class="trac_iconservice">
+						<i class="icon-tablet"></i>
+					</div>
+					<h3>Mobile</h3>
+					<p>iOS and Android mobile development with a focus on multi-device solutions.</p> 
+				</div>
+				<!--End service blocks-->
+				
+				<!--Service blocks-->
+				<div class="trac_service span4">
+					<div class="trac_iconservice">
+						<i class="icon-cogs"></i>
+					</div>
+					<h3>Cloud</h3>
+					<p>Infrastructure solutions leveraging Cloud and the latest PAAS platforms. We simplify complex systems with innovative technology</p> 
+				</div>
+				<!--End service blocks-->
+				
+				<!--Service blocks-->
+				<div class="trac_service span4">
+					<div class="trac_iconservice">
+						<i class="icon-lightbulb"></i>
+					</div>
+					<h3>Creative</h3>
+					<p>Design and functionality should go hand in hand. Our sofware solutions keep this in mind with creative UX/UI that are functional but look great too.</p> 
+				</div>
+				<!--End service blocks-->
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact trac_white" id="contact">
+			<div class="container">
+            <div class="row">
+                <div class="span12">
+                    <div class="title">
+                        <h1>Contact Us</h1>
+                        <div class="trac_subtitle">
+                          <p>Do you have a <span class="trac_highlight">great idea</span>? Contact us so we can help make it happen.</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+      <!-- Contact Form -->
+            <div class="row">
+                <div class="span12">
+                    <form id="trac_contactform" method="post" action="contact.php">
+                        <div class="controls controls-row row">
+                            <div class="span6">
+                                <input type="text" placeholder="Name" name="name" class="input-block-level required">
+                            </div>
+                            <div class="span6">
+                                <input type="text" placeholder="Email" name="email" class="input-block-level required email">
+                            </div>
+                        </div>
+                        <div class="controls controls-row row">
+                            <div class="span6">
+                                <input type="text" placeholder="URL" name="url" class="input-block-level url">
+                            </div>
+                            <div class="span6">
+                                <input type="text" placeholder="Subject" name="subject" class="input-block-level required">
+                            </div>
+                        </div>
+                        <div class="controls">
+                            <textarea placeholder="Message" name="message" class="required span12" rows="6"></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button class="btn btn-primary btn-large btn-embossed btn-huge btn-inline" type="submit">Send Message</button>
+                            <div class="ajax-loader"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+				<div class="span12">
+					<div class="trac_bottomlogo"><img src="img/logo_center.png" alt=""></div>
+				</div>
+				<div class="trac_infocontact">
+					<div class="span4">
+						<div class="trac_contacticon">
+							<img src="img/f-icon1.png" alt="">
+						</div>
+						<div class="trac_infocontact_text">
+							<p><strong>Phone</strong> : (760) 593-7817</p>
+						</div>
+					</div>
+
+					<div class="span4">
+						<div class="trac_contacticon">
+							<img src="img/f-icon2.png" alt="">
+						</div>
+						<div class="trac_infocontact_text">
+							<p>
+								<strong>Address</strong> :
+								800 The Mark Lane, Suite 1703
+								San Diego, CA 92101
+							</p>
+						</div>
+					</div>
+
+					<div class="span4">
+						<div class="trac_contacticon">
+							<img src="img/f-icon3.png" alt="">
+						</div>
+						<div class="trac_infocontact_text">
+							<p><strong>Email</strong>  : info@tapestry<span class="trac_highlight">d</span>.com</p>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </section>
+	<section class="map">
+		<!-- google maps -->
+		<div id="trac_maps"></div>
+	</section>
+	<section class="footer green">
+		<div class="container">
+			<div class="row">
+				<div class="span12 trac_social">
+					<h3 class="trac_follow">Follow us:</h3>
+					<a class="trac_socialmed" href="#" data-placement="bottom" data-toggle="tooltip" title="@traclab"><i class="icon-twitter"></i></a>
+					<a class="trac_socialmed" href="#" data-placement="bottom" data-toggle="tooltip" title="Skype"><i class="icon-skype"></i></a>
+					<a class="trac_socialmed" href="#" data-placement="bottom" data-toggle="tooltip" title="Linkedin"><i class="icon-linkedin"></i></a>
+					<a class="trac_socialmed" href="#" data-placement="bottom" data-toggle="tooltip" title="dribbbles"><i class="icon-dribbble"></i></a>
+					<a class="trac_socialmed" href="#" data-placement="bottom" data-toggle="tooltip" title="Facebook"><i class="icon-facebook"></i></a>
+					<a class="trac_socialmed" href="#" data-placement="bottom" data-toggle="tooltip" title="Instagram"><i class="icon-instagram"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="footer-bottom trac_white">
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<p class="copy">
+						&copy; 2013, All Rights Reserved.
+					</p>
+				</div>
+			</div>
+		</div>
+  </section>
+
+
+
+
+    <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="js/jquery.nav.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+
+    <script type="text/javascript" src="js/jquery.backstretch.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/jquery.textillate.js"></script>
+
+    <!-- Contact Form -->
+    <script src="js/contactform/jquery.form.min.js"></script>
+    <script src="js/contactform/jquery.validate.min.js"></script>
+    <script src="js/contactform/jquery.contact.js"></script>
+
+    <script src="js/jquery.knob.js"></script> 
+    <script src="js/jquery.knob.script.js"></script>
+    <script src="js/jquery.ccountdown.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
 
 </body>
 </html>
-

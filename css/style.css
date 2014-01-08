@@ -1,0 +1,1036 @@
+@import url(font-awesome.css);
+@import url(animate.css);
+@import url(bootstrap.css);
+@import url(bootstrap-responsive.css);
+@import url(flat-ui.css);
+
+/*=====================================================================
+		Kevin Custom
+======================================================================*/
+em {
+	color: #45b4ed;	
+}
+
+
+/*=====================================================================
+		Font Style
+======================================================================*/
+	@font-face {
+	  font-family: 'BebasNeue';
+	  src: url('font/BebasNeue-webfont.eot');
+	  src: url('font/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+		   url('font/BebasNeue-webfont.woff') format('woff'), 
+		   url('font/BebasNeue-webfont.ttf') format('truetype'), 
+		   url('font/BebasNeue-webfont.svg#BebasNeue') format('svg');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+
+/*=====================================================================
+		HEADER
+======================================================================*/
+	.trac_header {
+		display: block;
+		height: 100%;
+		position: relative;
+	   background-image: url(../img/slate_linen.png);
+	}
+	.trac_header:after {
+		background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+		content: "";
+		display: block;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: -1;
+	}
+
+/*=====================================================================
+		WELCOME
+======================================================================*/
+	.trac_welcome {
+		display: block;
+		margin: 60px auto;
+		position: relative;
+		text-align: center;
+	}
+	.trac_welcome h1 {
+		color: #FFFFFF;
+		font-family: Bebasneue;
+		font-size: 40px;
+		font-weight: lighter;
+	}
+	.trac_brand {
+		margin: 30px auto 0;
+		position: relative;
+		width: 300px;
+	}
+	.trac_trac_welcomeslide{
+		overflow: hidden;
+	}
+	.trac_trac_welcomeslide > span {
+		color:#fff;
+		font-family: bebasneue;
+		font-size: 60px;
+		font-weight: 900;
+		line-height: 72px;
+	}
+
+/*=====================================================================
+		COUNTER
+======================================================================*/
+	.trac_counter{
+		margin:30px auto 0;
+	}
+
+	.trac_description > h3 {
+		color: #FFFFFF;
+		font-family: bebasneue;
+		font-size: 30px;
+	}
+	.link {
+		margin: 0 auto 30px;
+		position: relative;
+		text-align: center;
+		text-decoration:none;
+	}
+	.link > a {
+		position: relative;
+		display: inline-block;
+	}
+
+/*=====================================================================
+		MAIN TILTE
+======================================================================*/
+	.title{
+		margin-bottom: 90px;
+	}
+	.title > h1 {
+		font-family: bebasneue;
+		line-height: 90px;
+		text-align: center;
+	}
+	.title > h1:before {
+		position: relative;
+		display: inline;
+		color:#2c3e50;
+		content: "[";
+		padding-right: 10px;
+		font-weight: 400;
+		font-family: lato;
+		font-size: 70px;
+		bottom: 5%;
+	}
+	.title > h1:after {
+		position: relative;
+		display: inline;
+		content: "]";
+		color:#2c3e50;
+		padding-left: 10px;
+		font-weight: 400;
+		font-family: lato;
+		font-size: 70px;
+		bottom: 5%;
+	}
+	.trac_subtitle p{
+		color:#95a5a6;
+		font-family: 'Open Sans',serif;
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 1.4;
+		padding: 0;
+		position: relative;
+		z-index: 1;
+		width: 70%;
+		margin:0 auto;
+		text-align: center
+	}
+
+
+/*=====================================================================
+		COLORING
+======================================================================*/
+	.trac_highlight {
+		color: #45b4ed;
+	}
+	.trac_highlight.trac_whites {
+		color: #ecf0f1;
+	}
+
+	.trac_white{
+		background: #fff;
+	}
+
+/*=====================================================================
+		SECTION CLASS
+======================================================================*/
+	.trac_about, .service, .contact{
+		position: relative;
+		display: block;
+		padding: 90px 20px;
+	}
+	.service{
+		background:#ecf0f1;
+	}
+	.footer{
+		padding:60px 20px;
+		background:#45b4ed;
+	}
+	.footer-bottom{
+		padding : 30px 0;
+	}
+	.copy {
+		position: relative;
+		display: block;
+		margin: 0 auto;
+		text-align:center;
+	}
+
+/*=====================================================================
+		MENU
+======================================================================*/
+	.trac_menu { width:100%; padding: 15px 0 16px; z-index:999; display:block; float:left; background: #eee; border-bottom:1px solid #dedede;}
+	.trac_mainmenu { float:right; display:block; margin-top:10px; margin-bottom:0;}
+	.trac_mainmenu li {
+		float: left;
+		margin: 0 5px 0 auto;
+		overflow: hidden;
+		padding: 15px 0;
+	}
+	.trac_mainmenu li a {
+		border-radius: 2px 2px 2px 2px;
+		color: #2c3e50;
+		font-family: open sans;
+		padding: 10px;
+		font-weight:600;
+	}
+	.trac_mainmenu li.active a{
+		background: #45b4ed;
+		color: #fff;
+		text-decoration: none;
+		border-radius: 2px;
+		-webkit-transition: all 0.3s linear;
+		-moz-transition: all 0.3s linear;
+		-o-transition: all 0.3s linear;
+		-ms-transition: all 0.3s linear;
+		transition: all 0.3s linear;
+	}
+
+	.sticky-wrapper.is-sticky .trac_menu {
+		-webkit-transition: all 0.3s linear;
+		-moz-transition: all 0.3s linear;
+		-o-transition: all 0.3s linear;
+		-ms-transition: all 0.3s linear;
+		transition: all 0.3s linear;
+		padding: 0;
+		background-image:url(../img/gray_linen.png)
+	}
+
+/*=====================================================================
+		MOBILE MENU
+======================================================================*/
+	.trac_menu .logo {
+		margin-left: auto;
+		margin-top: 5px;
+		width: 60px;
+		margin-bottom: 5px;
+	}
+	.trac_menu .logo-center {
+		margin-left: auto;
+		margin-top: 5px;
+		height: 45px;
+		margin-bottom: 5px;
+	}
+	.trac_mobtrac_menu { text-align:center; display:none; }
+	.trac_mobtrac_menu li { padding:10px 0; }
+	.trac_mobilebutton  { display:none; margin-right:10px; cursor:pointer; margin-top:10px; }
+
+
+
+
+/*=====================================================================
+		ABOUT PAGE
+======================================================================*/
+	.trac_aboutus {
+		display: inline-block;
+		margin: 0 auto 30px;
+		position: relative;
+	}
+	.trac_abouttitle {
+		display: block;
+		margin-bottom: 5px;
+		position: relative;
+	}
+
+
+	.trac_abouttitle > h4 {
+		font-family: lato;
+		font-size: 24px;
+		font-weight: 900;
+		line-height: 22px;
+		padding-bottom:10px;
+	}
+
+
+/*=====================================================================
+		SOCIAL MEDIA
+======================================================================*/
+.trac_social {
+    text-align: center;
+}
+.trac_follow {
+    color: #FFFFFF;
+    font-family: bebasneue;
+    font-size: 40px;
+    line-height: 50px;
+    margin:15px auto;
+}
+.trac_socialmed {
+    border: 2px solid #ecf0f1;
+    border-radius: 100%;
+    color: #ecf0f1;
+    font-size: 24px;
+    padding: 15px;
+    display:inline-block;
+    height:30px;
+    width:30px;
+}
+.trac_socialmed:hover,
+.trac_socialmed:focus {
+	background: #2c3e50;
+	border: 2px solid #2c3e50;
+	color: #45b4ed;
+	text-shadow: none;
+	box-shadow: none;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+a.trac_socialmed i {
+    line-height: 30px;
+}
+
+#trac_maps {
+    border-bottom: 1px solid #ECECEC;
+    border-top: 1px solid #ECECEC;
+}
+#trac_maps {
+    height: 300px;
+    max-width: 100%;
+    width: auto;
+}
+
+
+
+
+/*=====================================================================
+		SERVICE 
+======================================================================*/
+	.trac_servicebox h5 {
+		font-family: open sans;
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 20px;
+		margin-left: 50px;
+		margin-top: 5px;
+	}
+	.trac_servicebox{
+		margin-top:30px;
+	}
+	.trac_service{
+		background:#fff;
+		text-align:center;
+	}
+	.trac_iconservice {
+		background: #bdc3c7;
+		border-radius: 100px;
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		-ms-border-radius: 100px;
+		-o-border-radius: 100px;
+		box-shadow: 0 0 0 4px #ecf0f1;
+		display: block;
+		height: 80px;
+		line-height: 80px;
+		margin: 0 auto;
+		position: relative;
+		text-align: center;
+		top: -40px;
+		width: 80px;
+		-webkit-transition: 0.25s;
+		-moz-transition: 0.25s;
+		-o-transition: 0.25s;
+		transition: 0.25s;
+	}
+	.trac_service i {
+		color: #FFFFFF;
+		cursor: pointer;
+		font-size: 40px;
+		line-height: 85px;
+	}
+	.trac_iconservice:hover{
+		 background: #45b4ed;
+		 transform: rotate(45deg);
+	}
+	.trac_service h3{
+		font-size:20px;
+		font-family: 'lato';
+		color:#444444;
+		position:relative;
+	}
+
+	.trac_service p{
+		padding:10px 15px 20px;
+	}
+
+/*=====================================================================
+		SERVICE ICON LIST
+======================================================================*/
+	.trac_serviceicons {
+		list-style-type: none;
+		margin: 0;
+	}
+	.trac_serviceicons > li {
+		line-height: 21.5px;
+	}
+	.trac_serviceicons li i{
+		padding-right: 5px;
+		color: #2c3e50;
+	}
+	.ico {
+		background: none repeat scroll 0 0 #3C4852;
+		float: left;
+		height: 40px;
+		width: 40px;
+	}
+	.ico i {
+		color: #ECF0F1;
+		display: block;
+		font-size: 18px;
+		line-height: 40px;
+		margin: 0 auto;
+		padding: 0;
+		text-align: center;
+	}
+
+/*=====================================================================
+		COUNTER
+======================================================================*/
+	canvas{
+		height:150px;
+		cursor:pointer;
+	}
+
+
+/*=====================================================================
+		SUBSCRIBE FORMS
+======================================================================*/
+	.trac_subscribe {
+		display: block;
+		position: relative;
+	}
+	.trac_subscribe .control-group .flat {
+		background: none repeat scroll 0 0 rgba(255, 255, 255, 0.2);
+		border: 1px solid rgba(255, 255, 255, 0.4);
+		color: #FFFFFF;
+		height: 30px;
+		text-indent: 10px;
+		width: 30%;
+	}
+	.trac_subscibetitle {
+		color: #FFFFFF;
+		font-family: bebasneue;
+		font-size: 22px;
+		margin-bottom: 5px;
+		font-weight:lighter;
+	}
+	#trac_subscribe-form label.error {
+		display: inline;
+		left: 30%;
+		position: absolute;
+		top: -25px;
+	}
+	label.error {
+		background: #e74c3c;
+		display: inline-block;
+		color: #fff;
+		padding: 0 10px 3px;
+	}
+
+/*=====================================================================
+		CONTACT FORMS
+======================================================================*/
+	textarea {
+		resize: none;
+		height: auto;
+	}
+	.input-block-level {
+		min-height: 48px !important;
+	}
+	.form-actions {
+		border: 0 none !important;
+		background: transparent !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+
+/*=====================================================================
+		CONTACT FORM
+======================================================================*/
+	#trac_contactform {
+		display: inline-block;
+		margin-bottom: 60px;
+		position: relative;
+	}
+	.trac_infocontact {
+		position: relative;
+		display: inline-block;
+		margin: 60px auto;
+		text-align:center;
+	}
+
+	.trac_contacticon {
+		border-radius: 100%;
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
+		-ms-border-radius: 100%;
+		-o-border-radius: 100%;
+		box-shadow: 0 0 0 2px #bdc3c7;
+		display: block;
+		height: 90px;
+		line-height: 90px;
+		margin: 0 auto;
+		position: relative;
+		width: 90px;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+	}
+	.trac_contacticon:hover {
+		box-shadow: 0 0 0 2px #45b4ed;
+		transform: rotate(45deg);
+		cursor: pointer;
+	}
+	.trac_infocontact_text{
+		text-align:center;
+	}
+	.trac_infocontact_text p {
+		font-family: open Sans,sans-serif;
+		font-size: 22px;
+		line-height: 32px;
+		margin-top: 30px;
+	}
+	.trac_bottomlogo > img {
+		border-bottom: 2px solid;
+		display: inline-block;
+		padding: 15px;
+		width: 100px;
+	}
+	.trac_bottomlogo {
+		border-bottom: 1px solid #ecf0f1;
+		margin: 0 auto;
+		position: relative;
+		text-align: center;
+	}
+/*=====================================================================
+		trac_preload
+======================================================================*/
+	#trac_preload {
+		position:fixed;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		background-color:#fff; /* change if the mask should have another color then white */
+		z-index:999999; /* makes sure it stays on top */
+	}
+
+	#trac_textload {
+		width:200px;
+		height:200px;
+		position:absolute;
+		left:50%; /* centers the loading animation horizontally one the screen */
+		top:50%; /* centers the loading animation vertically one the screen */
+		background-image:url(../img/trac_preload.gif); /* path to your loading animation */
+		background-repeat:no-repeat;
+		background-position:center;
+		margin:-100px 0 0 -100px; /* is width and height divided by two */
+	}
+	#trac_textload p{text-align:center;}
+		
+	.ajax-loader, .loadings {
+			background:url(../img/preloader.gif) no-repeat; 
+			height: 48px;
+			width: 48px;
+			display: none;
+			float: right;
+			margin: 15px 30px 0 0;
+		}
+
+
+
+/*=====================================================================
+		RESPONSIVE STYLE
+======================================================================*/
+@media screen and (max-width: 1024px) {
+	.trac_brand {
+		margin: 30px auto 0;
+		position: relative;
+		width: 150px;
+	}
+}
+@media screen and (max-width: 900px) {
+	.trac_trac_welcomeslide {
+		overflow: hidden;
+		width: auto;
+	}
+	.trac_trac_welcomeslide > span {
+		color: #FFFFFF;
+		font-family: bebasneue;
+		font-size: 80px;
+		font-weight: 700;
+		line-height: 72px;
+	}
+	.trac_subscribe .control-group .flat{
+		width:50%;
+	}
+	.trac_subtitle p{
+		font-size: 20px;
+		width:85%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.trac_trac_welcomeslide {
+		overflow: hidden;
+		width: auto;
+	}
+	.trac_trac_welcomeslide > span {
+		color: #FFFFFF;
+		font-family: bebasneue;
+		font-size: 80px;
+		font-weight: 700;
+		line-height: 72px;
+	}
+	.trac_subscribe .control-group .flat{
+		width:50%;
+	}
+	.trac_subtitle p{
+		font-size: 20px;
+		width:85%;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.trac_trac_welcomeslide {
+		overflow: hidden;
+		width: auto;
+	}
+	.trac_trac_welcomeslide > span {
+		color: #FFFFFF;
+		font-family: bebasneue;
+		font-size: 80px;
+		font-weight: 700;
+		line-height: 72px;
+	}
+	.trac_subscribe .control-group .flat{
+		width:50%;
+	}
+	.trac_subtitle p{
+		font-size: 20px;
+		width:85%;
+	}
+	.trac_service h3 {
+		font-size: 18px;
+		padding: 0 10px;
+	}
+	.trac_iconservice {
+		height: 70px;
+		line-height: 70px;
+		top: -30px;
+		width: 70px;
+	}
+	.trac_service i {
+		color: #FFFFFF;
+		cursor: pointer;
+		font-size: 35px;
+		line-height: 75px;
+	}
+}
+
+
+
+
+@media screen and (max-width: 640px) {
+	.trac_mainmenu  { display:none; }
+	.trac_mobilebutton {
+		display: inline-block;
+		float: right;
+		position: relative;
+		margin-top:15px;
+	}
+	.trac_mobilebutton i {
+		font-size: 30px;
+		margin-right: 20px;
+		margin-top: 15px;
+	}
+	.trac_trac_welcomeslide > span {
+		font-size: 35px;
+		font-weight: 600;
+		line-height: 37px;
+	}
+	.trac_welcome{
+		margin:30px auto;
+	}
+	canvas {
+		cursor: pointer;
+		height: 100px;
+	}
+	.knob {
+		height: 105px !important;
+		margin-left: -83px !important;
+		margin-top: -17px !important;
+	}
+	.trac_subscribe .control-group .flat{
+		width:50%;
+		margin-bottom:10px;
+	}
+	.trac_subscibetitle{
+		margin-bottom:0;
+	}
+	.title > h1 {
+		font-size: 50px;
+		line-height: 60px;
+	}
+	.trac_subtitle p{
+		font-size:16px;
+		width:auto;
+	}
+	.trac_servicebox p {
+		margin-bottom: 30px;
+	}
+	.trac_servicebox h5 {
+		line-height: 35px;
+		margin-bottom: 0;
+		margin-left: 50px;
+	}
+	.trac_servicebox p {
+		margin: 15px auto 30px;
+	}
+	.trac_aboutus .span4 {
+		margin-bottom: 30px;
+	}
+	.ico i {
+		font-size: 16px;
+		line-height: 40px;
+	}
+	.trac_infocontact .span4{
+		margin-bottom:30px;
+	}
+	.trac_brand {
+		width: 120px;
+	}
+
+	.trac_menu .logo {
+		margin: 5px 20px;
+		width: 50px;
+	}
+	.sticky-wrapper.is-sticky .trac_menu {
+		padding: 15px 0;
+		transition: all 0.3s linear 0s;
+	}
+	.trac_about, .service, .contact {
+		padding: 80px 20px;
+	}
+	.trac_service {
+		margin-bottom: 60px;
+	}
+
+	#trac_contactform {
+		display: block;
+	}
+	.trac_mobtrac_menu li {
+		list-style: none outside none;
+		margin-top:1px ;
+	}
+	.trac_mobtrac_menu li.active, .trac_mobtrac_menu li:hover {
+		background: #45b4ed;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+	}
+	.trac_mobtrac_menu {
+		margin: 0 auto 20px;
+		position: relative;
+		z-index: 9999;
+	}
+	.trac_mobtrac_menu a {
+		display: block;
+	}
+	.trac_mobtrac_menu li.active a, .trac_mobtrac_menu a:hover {
+		color:#fff;
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+	.trac_mainmenu  { display:none; }
+	.trac_menu .logo {
+		margin: 5px 20px;
+		width: 50px;
+	}
+	.trac_mobtrac_menu {
+		margin: 0 auto 20px;
+	}
+	
+	.trac_mobtrac_menu li {
+		list-style: none outside none;
+		margin-top:1px ;
+	}
+	.trac_mobtrac_menu li.active, .trac_mobtrac_menu li:hover {
+		background: #45b4ed;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+	}
+	.trac_mobtrac_menu {
+		margin: 0 auto 20px;
+		position: relative;
+		z-index: 9999;
+	}
+	.trac_mobtrac_menu a {
+		display: block;
+	}
+	.trac_mobtrac_menu li.active a, .trac_mobtrac_menu a:hover {
+		color:#fff;
+	}
+	.trac_mobilebutton {
+		display: inline-block;
+		float: right;
+		position: relative;
+		margin-top:15px;
+	}
+	.trac_mobilebutton i {
+		font-size: 30px;
+		margin-right: 20px;
+		margin-top: 15px;
+	}
+	.trac_welcome{
+		text-align:center;
+	}
+	.trac_trac_welcomeslide {
+		overflow: hidden;
+		width: auto;
+	}
+	.trac_trac_welcomeslide > span {
+		color: #FFFFFF;
+		font-family: bebasneue;
+		font-size: 35px;
+		font-weight: 600;
+		line-height: 37px;
+	}
+	.trac_subscribe .control-group .flat{
+		width:100%;
+		margin-bottom:10px;
+	}
+	.trac_subscibetitle{
+		margin-bottom:0;
+	}
+	.trac_infocontact .span4{
+		margin-bottom:30px;
+	}
+	.trac_brand {
+		margin: 30px auto 0;
+		position: relative;
+		width: 120px;
+	}
+	canvas {
+		cursor: pointer;
+		height: 125px;
+	}
+	.knob {
+		height: 105px !important;
+		margin-left: -93px !important;
+		margin-top: -8px !important;
+	}
+	.trac_subscribe {
+		padding: 0 20px;
+	}
+	.trac_service {
+		margin-bottom: 60px;
+	}
+}
+
+
+
+@media only screen and (max-width:360px){
+	.trac_mainmenu  { display:none; }
+	.trac_menu .logo {
+		margin: 5px 20px;
+		width: 50px;
+	}
+	canvas {
+		cursor: pointer;
+		height: 150px;
+	}
+	.knob {
+		font-size: 24px !important;
+		height: 95px !important;
+		margin-left: -103px !important;
+		margin-top: 5px !important;
+	}
+	.title > h1 {
+		font-size: 40px;
+		line-height: 50px;
+	}
+	.title > h1:before {
+		font-size: 55px;
+	}
+	.title > h1:after {
+		font-size: 55px;
+	}
+	.trac_mobtrac_menu {
+		margin: 0 auto 20px;
+	}
+	.trac_mobtrac_menu li {
+		list-style: none outside none;
+		margin-top:1px ;
+	}
+	.trac_mobtrac_menu li.active, .trac_mobtrac_menu li:hover {
+		background: #45b4ed;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+	}
+	.trac_mobtrac_menu {
+		margin: 0 auto 20px;
+		position: relative;
+		z-index: 9999;
+	}
+	.trac_mobtrac_menu a {
+		display: block;
+	}
+	.trac_mobtrac_menu li.active a, .trac_mobtrac_menu a:hover {
+		color:#fff;
+	}
+	.trac_brand {
+		margin: 30px auto 0;
+		position: relative;
+		width: 100px;
+	}
+	.trac_trac_welcomeslide > span {
+		font-size: 46px;
+		font-weight: 600;
+		line-height: 52px;
+	}
+	.trac_infocontact .span4{
+		margin-bottom:30px;
+	}
+	.trac_subscribe {
+		padding: 0 20px;
+	}
+	.trac_about, .service, .contact {
+		padding: 70px 20px;
+	}
+	.trac_service {
+		margin-bottom: 60px;
+	}
+	.trac_socialmed{
+		margin-bottom:3px;
+	}
+}
+
+
+@media only screen and (max-width:320px){
+	.trac_mainmenu  { display:none; }
+	.trac_menu .logo {
+		margin: 5px 20px;
+		width: 50px;
+	}
+	.trac_welcome{
+		text-align:center;
+		margin:30px auto;
+	}
+	.trac_trac_welcomeslide {
+		overflow: hidden;
+		width: auto;
+	}
+	.trac_trac_welcomeslide > span {
+		color: #FFFFFF;
+		font-family: bebasneue;
+		font-size: 40px;
+		font-weight: 600;
+		line-height: 50px;
+	}
+	.trac_subscribe .control-group .flat{
+		width:100%;
+		margin-bottom:10px;
+	}
+	.trac_subscibetitle{
+		margin-bottom:0;
+	}
+	.trac_mobilebutton {
+		display: inline-block;
+		float: right;
+		position: relative;
+	}
+
+	.trac_mobilebutton i {
+		font-size: 30px;
+		margin-right: 30px;
+		margin-top: 15px;
+	}
+	.title > h1 {
+		font-size: 30px;
+		line-height: 40px;
+	}
+	
+	.title > h1:before {
+		font-size: 45px;
+	}
+	.title > h1:after {
+		font-size: 45px;
+	}
+	.trac_subtitle p{
+		font-size:16px;
+		width:auto;
+	}
+	.trac_servicebox p {
+		margin-bottom: 30px;
+	}
+	.trac_servicebox h5 {
+		line-height: 35px;
+		margin-bottom: 0;
+		margin-left: 50px;
+	}
+	.trac_servicebox p {
+		margin: 15px auto 30px;
+	}
+	.trac_infocontact .span4{
+		margin-bottom:30px;
+	}
+	canvas {
+		cursor: pointer;
+		height: 120px;
+	}
+	.knob {
+		font-size: 24px !important;
+		height: 100px !important;
+		margin-left: -92px !important;
+		margin-top: -5px !important;
+	}
+}
