@@ -11,7 +11,9 @@ em {
 	color: #45b4ed;	
 }
 
-
+.bright-blue {
+    color: #45b4ed
+}
 /*=====================================================================
 		Font Style
 ======================================================================*/
@@ -64,7 +66,7 @@ em {
 	.trac_brand {
 		margin: 30px auto 0;
 		position: relative;
-		width: 300px;
+		width: 150px;
 	}
 	.trac_trac_welcomeslide{
 		overflow: hidden;
@@ -72,9 +74,9 @@ em {
 	.trac_trac_welcomeslide > span {
 		color:#fff;
 		font-family: bebasneue;
-		font-size: 60px;
+		font-size: 40px;
 		font-weight: 900;
-		line-height: 72px;
+		line-height: 62px;
 	}
 
 /*=====================================================================
@@ -238,10 +240,16 @@ em {
 	}
 	.trac_menu .logo-center {
 		margin-left: auto;
-		margin-top: 5px;
-		height: 45px;
+		margin-top: 10px;
+		height: 25px;
 		margin-bottom: 5px;
 	}
+    .trac_menu a.brand {
+        margin-top: 10px;
+        color: #000;
+        font-family: bebasneue;
+        font-size: 30px;
+    }
 	.trac_mobtrac_menu { text-align:center; display:none; }
 	.trac_mobtrac_menu li { padding:10px 0; }
 	.trac_mobilebutton  { display:none; margin-right:10px; cursor:pointer; margin-top:10px; }
@@ -285,6 +293,10 @@ em {
     font-size: 40px;
     line-height: 50px;
     margin:15px auto;
+}
+.trac_follow img {
+    width: 32px;
+    margin-left: 12px;
 }
 .trac_socialmed {
     border: 2px solid #ecf0f1;
@@ -528,10 +540,10 @@ a.trac_socialmed i {
 		margin-top: 30px;
 	}
 	.trac_bottomlogo > img {
-		border-bottom: 2px solid;
+		/*border-bottom: 2px solid;*/
 		display: inline-block;
-		padding: 15px;
-		width: 100px;
+		padding: 4px;
+		width: 30px;
 	}
 	.trac_bottomlogo {
 		border-bottom: 1px solid #ecf0f1;
@@ -583,7 +595,7 @@ a.trac_socialmed i {
 	.trac_brand {
 		margin: 30px auto 0;
 		position: relative;
-		width: 150px;
+		width: 100px;
 	}
 }
 @media screen and (max-width: 900px) {
