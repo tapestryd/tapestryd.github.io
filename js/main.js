@@ -170,8 +170,8 @@ window.onload = loadScript;
  * define the coordinates of your company
  */
 
-lat = 32.710961;
-lng = -117.156932; 
+lat = 43.170156;
+lng = -70.994157; 
 
 var map;
 var MY_MAPTYPE_ID = 'custom_style';
