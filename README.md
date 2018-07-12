@@ -1,4 +1,4 @@
-# Atomeq Website README
+# Tapestry Website README
 
-This is the Atomeq website README file.
+This is the Tapestry website README file.
 
