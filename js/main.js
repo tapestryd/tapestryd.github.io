@@ -157,9 +157,11 @@ function ScrollTo(id){
 function loadScript() {
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
-      'callback=initialize';
-  document.body.appendChild(script);
+//  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
+//      'callback=initialize';
+	script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBo1lL4DNg-aNqSI7bsSUTmK9s2qXTGtP0&callback=initMap';
+ 
+			document.body.appendChild(script);
 }
 window.onload = loadScript;
 
@@ -223,7 +225,8 @@ function initialize() {
 				]
 			  }
 			];
-  
+	
+			/// AIzaSyBo1lL4DNg-aNqSI7bsSUTmK9s2qXTGtP0
   var myLatlng = new google.maps.LatLng(lat,lng);
   var mapOptions = {
     zoom: 12,
