@@ -159,7 +159,8 @@ function loadScript() {
   script.type = 'text/javascript';
 //  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
 //      'callback=initialize';
-	script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBo1lL4DNg-aNqSI7bsSUTmK9s2qXTGtP0&callback=initMap';
+	script.src = 'https://maps.googleapis.com/maps/api/js?sensor=false'+
+		'&key=AIzaSyBo1lL4DNg-aNqSI7bsSUTmK9s2qXTGtP0&callback=initialize';
  
 			document.body.appendChild(script);
 }
